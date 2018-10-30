@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="E:\web-self\project-fortNight\stylepage.css">
+	<script>
+var i=0;
+var images=[];
+var time=3000;
+
+images[0] = '1.jpg';
+images[1] = '4.jpg';
+images[2] = '8.jpg';
+images[3] = '9.jpg';	
+
+function changeImg(){
+	document.slide.src = images[i];
+	if (i < images.length - 1){
+		i++;
+	}else{
+		i=0;
+	}
+	setTimeout("changeImg()",time);
+}
+window.onload = changeImg;
+
+</script>
+</head>
+<body>
+	
+	<div id="A" >
+		<font face="sans-serif" size="45px" color="white"><i>Find My Bus</i></font>
+	</div>	
+	
+	<div id="B" >
+			
+			<div id="B1">
+				<img name="slide" width="450px" height="550px">
+			</div>
+			
+			<div  id="B2">
+				
+				<form style="height: 430px;width:480px;">	
+				<font face="Arial" size="3px" >
+				<table id="b2">
+					<caption style="padding-bottom:12px"><big>Travel Details</big> </caption>
+					<tr >
+						<td class="b2a">Select Bus Route:</td>
+						<td class="b2a">
+								<select name="select" >
+								<option value="0">98</option>
+								<option value="1">99</option>
+								<option value="2">471</option>
+								<option value="3">69</option>
+								<option value="4">471</option>
+								<option value="5">469</option>
+								<option value="6">486/9</option>
+								<option value="7">64</option>
+								<option value="8">69</option>
+								<option value="9">69</option>
+								</select>
+						
+						</td>
+					</tr>
+					<tr >
+						<td class="b2a">Choose Direction:</td>
+						<td class="b2a"><input type="radio" name="colombo" value="Colombo" checked>To Colombo</td>
+						<td class="b2a"><input type="radio" name="colombo" value="Badulla">To Badulla</td>
+			
+					</tr>
+					
+					<tr>
+						<td class="b2a" align="center"><input type="submit" value="GO"/></td>
+						<td class="b2a" align="center"><input type="reset" value="Reset"/></td>
+					<tr>
+						<td>Bus Location:</td>		
+					</tr>
+					<tr>
+						<td>Arrival Time:</td>
+						<td><input type="text" value="Time " ></td>
+					</tr>
+					</font>
+				</table>
+				</form>
+			</div>
+			<div id="B3">
+				<div class="b3" >
+					<font size="6px">Welcome!</font>
+					<p>The tiresome WAITING FOR A BUS at PAMBAHINNA bus stop is over now!No more guessings 
+						about the whereabouts of the bus anymore.Find My Bus will tell you exactly where the bus is,
+						and time it will be at Pambahinna! </p>
+				</div>		
+				<div class="b3" >
+					<font size="6px">About Us</font>
+					<p>We are a group of student software developers who are determined to  provide IT solutions for the 
+						day to day problems we all are facing,like the difficulty of finding a bus home without wasting 
+						time.</p>
+					
+						<img src="google_plus_img.png" height="15px" width="15px"/>
+						<img src="facebook_img.png" height="15px" width="15px"/>
+						<img src="twitter_img.png" height="15px" width="15px"/>
+						<img src="linkedin_img.png" height="15px" width="15px"/>
+					
+					
+				</div>		
+			</div>
+		</div>
+		<br clear="all">
+</body>
+</html>

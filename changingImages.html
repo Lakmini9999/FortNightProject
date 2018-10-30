@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!-- <script type="text/javascript">
+  	var myIndex =0;
+fdSlides();
+
+function fdSlides(){
+	
+document.write("funcion works");
+var i;
+var x=document.getElementsByClassName("mySlides");
+	for(i=0;i<x.length;i++){
+	x[i].style.display="none";
+	}
+	myIndex++;
+	if(myIndex > x.length)
+	{myIndex = 1}
+	x[myIndex-1].style.display="block";
+	setTimeout(fdSlides, 4000);
+}
+  </script>
+</head>
+
+<body>
+  <div class= "food" style="max-width:500px">
+<img class="mySlides" src="p1.png" alt="cheese pizza" style="width:1000px;height:400px">
+<img class="mySlides" src="p2.png" alt="ham bacon" style="width:1000px;height:400px">
+<img class="mySlides" src="p3.png" alt="ggarllic pizza" style="width:1000px;height:400px">
+<img class="mySlides" src="p4.png" alt="bacon" style="width:1000px;height:400px">
+</div>
+<script type="text/javascript">
+var i=0;
+var images=[];
+var time=3000;
+
+images[0]=facebookIcon.jpg;
+images[1]=twitterIcon.jpg;
+images[2]=linkedinIcon.jpg;
+images[3]=facebookIcon.jpg;
+
+Function changeImg()
+{
+	document.slide.src=images[i];
+	
+	if(i<images.length-1)
+	{i++;}
+	
+	else
+	{i=0;}
+	
+	setTimeout("changeImg()",time);
+}	
+	window.onload=changeImage;
+	
+	</script>
+	
+	<img name="slide" width="200px"  height="200px">-->
+	
+	
+<script>
+var i=0;
+var images=[];
+var time=3000;
+
+images[0] = 'bha.jpg';
+images[1] = 'bur.jpg';
+images[2] = 'gh.jpg';
+images[3] = 'gya.jpg';	
+
+function changeImg(){
+	document.slide.src = images[i];
+	if (i < images.length - 1){
+		i++;
+	}else{
+		i=0;
+	}
+	setTimeout("changeImg()",time);
+}
+window.onload = changeImg;
+
+</script>
+<img name="slide" width="400" height="200">
+</body>
+</html>
